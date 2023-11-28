@@ -34,7 +34,6 @@ export default function Page() {
 
         return;
       }
-      console.log(data);
       setNotes(data);
       setLoading(false);
     };
