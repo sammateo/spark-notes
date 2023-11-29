@@ -46,16 +46,13 @@ export default function Login({
     });
 
     if (error) {
-      logError(error);
+      console.log(error);
       return redirect("/login?message=Could not authenticate user");
     }
 
     return redirect("/login?message=Check email to continue sign in process");
   };
-  const logError = (error: any) => {
-    "use client";
-    console.log(error);
-  };
+
   return (
     <div className="flex flex-col w-full min-h-[70vh]  m-auto px-8 sm:max-w-md justify-center items-center gap-2">
       <form
