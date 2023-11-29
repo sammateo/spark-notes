@@ -24,7 +24,7 @@ export default function Page() {
     const getData = async () => {
       const { data, error } = await supabase
         .from("notes")
-        .select(`*, note_users(email), comments(comment)`)
+        .select(`*, note_users(email, username), comments(comment)`)
         .eq("deleted", false);
       if (error) {
         console.log("Error");

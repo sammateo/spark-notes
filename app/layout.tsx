@@ -1,5 +1,7 @@
 import { GeistSans } from "geist/font/sans";
 import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 
